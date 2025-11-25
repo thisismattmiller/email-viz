@@ -214,7 +214,7 @@ export default {
     },
 
     async loadData() {
-      const response = await fetch('/data/all_emails.json')
+      const response = await fetch('./data/all_emails.json')
       this.data = await response.json()
 
       // Process contacts
